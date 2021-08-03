@@ -21,7 +21,10 @@ class MovieTableViewController: UITableViewController {
         "Leave No Trace (2018)",
         "Behind the Candelabra (2013)",
     ]
-
+    
+    var films = Film.createFilm()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +44,7 @@ class MovieTableViewController: UITableViewController {
   }
  */
 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return movieList.count
@@ -97,14 +101,21 @@ class MovieTableViewController: UITableViewController {
     }
     */
 
-    /*
+  
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
         // Get the new view controller using segue.destination.
+            print(indexPath)
+            let detailVCMovie = segue.destination as! DetailMovieViewController
         // Pass the selected object to the new view controller.
+            detailVCMovie.film = films[indexPath.row]
+            
+        }
     }
-    */
+   
 
 }

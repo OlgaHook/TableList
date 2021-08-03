@@ -24,6 +24,9 @@ class MusicTableViewController: UITableViewController {
                 "YG - Stop Snitching",
               ]
     
+    var songs = Song.createSong()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,6 +45,7 @@ class MusicTableViewController: UITableViewController {
     }
  */
 
+    //open this func to make elements (Array info)visible
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
@@ -101,14 +105,21 @@ class MusicTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
         // Get the new view controller using segue.destination.
+            print(indexPath)
+            let detailVC = segue.destination as! DetailMusicViewController
         // Pass the selected object to the new view controller.
+            detailVC.song = songs[indexPath.row]
+            
+        }
     }
-    */
+ 
 
 }
