@@ -68,6 +68,16 @@ class MusicTableViewController: UITableViewController {
 
         return cell
     }
+    
+    //MARK: Table view Delegate
+    
+    //to work with it we need the data source and the Delegate
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //by deloft this number is about 43 - based on screen size
+        return 80
+        
+    }
+    
    
 
     /*
