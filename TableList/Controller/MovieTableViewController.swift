@@ -32,7 +32,7 @@ class MovieTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -94,12 +94,15 @@ class MovieTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support rearranging the table view.
+    //Use to sort our table view
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        let currentMovie = films.remove(at: fromIndexPath.row)
+        films.insert(currentMovie, at: to.row)
+        
     }
-    */
+
 
     /*
     // Override to support conditional rearranging of the table view.
@@ -109,7 +112,10 @@ class MovieTableViewController: UITableViewController {
     }
     */
 
-  
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return.none
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
