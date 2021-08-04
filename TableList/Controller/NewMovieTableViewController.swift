@@ -23,12 +23,14 @@ class NewMovieTableViewController: UITableViewController {
         "NEW Behind the Candelabra (2013)",
     ]
     
-    var newFilms = Film.createFilm()
+    var newFilms = NewFilm.newCreateFilm()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,15 +39,17 @@ class NewMovieTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+/*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
+*/
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return newMovieList.count
+        //return newMovieList.count
+        return 0
     }
 
   
@@ -54,13 +58,15 @@ class NewMovieTableViewController: UITableViewController {
             return UITableViewCell()
             
         }
+        //cell.newMovieLabel.text = "TEST for New Movie"
+        //cell.newMovieImageView.image = UIImage(named: "Happy as Lazzaro (2018).png")
         cell.newMovieLabel.text = newMovieList[indexPath.row]
-        //cell.detailTextLabel?.text = newMovieList[indexPath.row]
+        cell.detailTextLabel?.text = newMovieList[indexPath.row]
         cell.newMovieImageView.image = UIImage(named: newMovieList[indexPath.row])
         
 
-        //cell.newMovieLabel.text = ""
-        //cell.newMovieImageView.image = UIImage(named: "")
+        //cell.newMovieLabel.text = "Happy as Lazzaro (2018)"
+        //cell.newMovieImageView.image = UIImage(named: "Happy as Lazzaro (2018)")
         // Configure the cell...
 
         return cell

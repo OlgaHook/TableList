@@ -12,9 +12,21 @@ class NewMovieTableViewCell: UITableViewCell {
     @IBOutlet weak var newMovieImageView: UIImageView!
  
     @IBOutlet weak var newMovieLabel: UILabel!
-    
+   
     var newFilm : NewFilm!
     
-        
+    func viewDidLoad() {
+
+        if newFilm != nil {
+            
+            newMovieImageView.image = UIImage(named: newFilm.newMovieCover)
+     
+            newMovieLabel.text = newFilm.newMovie + " " + newFilm.newMovieYear
+    
+           newMovieLabel.numberOfLines = 0
+            
+        }    }
+    
+    
     }
     
