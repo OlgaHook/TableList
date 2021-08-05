@@ -7,29 +7,27 @@
 
 import Foundation
 
-struct Film {
+struct Movie {
     
-    let movie : String
-    let movieYear : String
-    let movieCover : String
+    let filmTitle : String
+    let filmYear : String
+    let filmPoster : String
     
-    static func createFilm() -> [Film]{
+    static func createMovie() -> [Movie]{
+        var movies : [Movie] = []
         
-        var films : [Film] = []
+        let filmTitles  = DataManagerFilm.sharedFilm.filmTitle
+        let filmYears = DataManagerFilm.sharedFilm.filmYear
+        let filmPosters = DataManagerFilm.sharedFilm.filmPoster
         
-        let movies = DataManagerMovie.sharedMovie.movie
-        let movieYears = DataManagerMovie.sharedMovie.movieYear
-        let movieCovers = DataManagerMovie.sharedMovie.movieCover
         
-        for index in 0..<movies.count {
-            let film = Film(movie: movies[index], movieYear: movieYears[index], movieCover: movieCovers[index])
-            films.append(film)
+        for index in 0..<filmTitles.count {
+            let movie = Movie(filmTitle: filmTitles[index], filmYear: filmYears[index], filmPoster: filmPosters[index])
+            movies.append(movie)
             
         }
-        
     
-        return films
-        
+    return movies
     }
     
 }

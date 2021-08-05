@@ -7,12 +7,12 @@
 
 import Foundation
 
-class DataManagerMovie{
+class DataManagerFilm{
     
     
-    static let sharedMovie = DataManagerMovie()
+    static let sharedFilm = DataManagerFilm()
     
-    var movie = [
+    var filmTitle = [
         
     "Brokeback Mountain",
     "Happy as Lazzaro",
@@ -27,7 +27,7 @@ class DataManagerMovie{
         
     ]
     
-    var movieYear = [
+    var filmYear = [
     
         "(2005)",
         "(2018)",
@@ -40,7 +40,7 @@ class DataManagerMovie{
         "(2018)",
         "(2013)",    ]
     
-    var movieCover = [
+    var filmPoster = [
         
     "Brokeback Mountain (2005)",
     "Happy as Lazzaro (2018)",

@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4414AFB26BBFE7900A8DE68 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4414AFA26BBFE7900A8DE68 /* MovieTableViewController.swift */; };
 		B46E8AD226B8E8640069BB93 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD126B8E8640069BB93 /* MusicTableViewController.swift */; };
-		B46E8AD426B8E8770069BB93 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD326B8E8770069BB93 /* MovieTableViewController.swift */; };
 		B46E8AD626B8F5C70069BB93 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD526B8F5C70069BB93 /* Song.swift */; };
 		B46E8AD826B8F8970069BB93 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD726B8F8970069BB93 /* DataManager.swift */; };
 		B46E8ADA26B9064B0069BB93 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD926B9064B0069BB93 /* Movie.swift */; };
 		B46E8ADC26B9066F0069BB93 /* DataManagerMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8ADB26B9066F0069BB93 /* DataManagerMovie.swift */; };
 		B46E8ADE26B950A60069BB93 /* DetailMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8ADD26B950A60069BB93 /* DetailMusicViewController.swift */; };
-		B46E8AE026B950B70069BB93 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8ADF26B950B70069BB93 /* DetailMovieViewController.swift */; };
-		B46E8AE226B9827A0069BB93 /* NewMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AE126B9827A0069BB93 /* NewMovieTableViewCell.swift */; };
-		B46E8AE626B985B20069BB93 /* NewMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AE526B985B20069BB93 /* NewMovieTableViewController.swift */; };
-		B46E8AE826B98B330069BB93 /* NewMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AE726B98B330069BB93 /* NewMovie.swift */; };
-		B46E8AEA26B98B850069BB93 /* NewDataManagerMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AE926B98B850069BB93 /* NewDataManagerMovie.swift */; };
+		B46E8AF026BAFCAD0069BB93 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AEF26BAFCAD0069BB93 /* MovieTableViewCell.swift */; };
 		B46F76EA26B8702300B92AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F76E926B8702300B92AAE /* AppDelegate.swift */; };
 		B46F76EC26B8702300B92AAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F76EB26B8702300B92AAE /* SceneDelegate.swift */; };
 		B46F76F126B8702300B92AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46F76EF26B8702300B92AAE /* Main.storyboard */; };
@@ -27,18 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4414AFA26BBFE7900A8DE68 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		B46E8AD126B8E8640069BB93 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
-		B46E8AD326B8E8770069BB93 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		B46E8AD526B8F5C70069BB93 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B46E8AD726B8F8970069BB93 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B46E8AD926B9064B0069BB93 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		B46E8ADB26B9066F0069BB93 /* DataManagerMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerMovie.swift; sourceTree = "<group>"; };
 		B46E8ADD26B950A60069BB93 /* DetailMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMusicViewController.swift; sourceTree = "<group>"; };
-		B46E8ADF26B950B70069BB93 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
-		B46E8AE126B9827A0069BB93 /* NewMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovieTableViewCell.swift; sourceTree = "<group>"; };
-		B46E8AE526B985B20069BB93 /* NewMovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovieTableViewController.swift; sourceTree = "<group>"; };
-		B46E8AE726B98B330069BB93 /* NewMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovie.swift; sourceTree = "<group>"; };
-		B46E8AE926B98B850069BB93 /* NewDataManagerMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataManagerMovie.swift; sourceTree = "<group>"; };
+		B46E8AEF26BAFCAD0069BB93 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		B46F76E626B8702300B92AAE /* TableList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46F76E926B8702300B92AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46F76EB26B8702300B92AAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,10 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				B46E8AEB26B9A1CD0069BB93 /* MusicController */,
-				B46E8AE126B9827A0069BB93 /* NewMovieTableViewCell.swift */,
-				B46E8AE526B985B20069BB93 /* NewMovieTableViewController.swift */,
-				B46E8ADF26B950B70069BB93 /* DetailMovieViewController.swift */,
-				B46E8AD326B8E8770069BB93 /* MovieTableViewController.swift */,
+				B46E8AEF26BAFCAD0069BB93 /* MovieTableViewCell.swift */,
+				B4414AFA26BBFE7900A8DE68 /* MovieTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,8 +132,6 @@
 				B46E8AEC26B9A1ED0069BB93 /* MusicModel */,
 				B46E8AD926B9064B0069BB93 /* Movie.swift */,
 				B46E8ADB26B9066F0069BB93 /* DataManagerMovie.swift */,
-				B46E8AE726B98B330069BB93 /* NewMovie.swift */,
-				B46E8AE926B98B850069BB93 /* NewDataManagerMovie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,19 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46E8AE826B98B330069BB93 /* NewMovie.swift in Sources */,
+				B4414AFB26BBFE7900A8DE68 /* MovieTableViewController.swift in Sources */,
+				B46E8AF026BAFCAD0069BB93 /* MovieTableViewCell.swift in Sources */,
 				B46E8ADA26B9064B0069BB93 /* Movie.swift in Sources */,
-				B46E8AD426B8E8770069BB93 /* MovieTableViewController.swift in Sources */,
 				B46E8AD826B8F8970069BB93 /* DataManager.swift in Sources */,
 				B46F76EA26B8702300B92AAE /* AppDelegate.swift in Sources */,
 				B46F76EC26B8702300B92AAE /* SceneDelegate.swift in Sources */,
 				B46E8ADE26B950A60069BB93 /* DetailMusicViewController.swift in Sources */,
 				B46E8AD226B8E8640069BB93 /* MusicTableViewController.swift in Sources */,
-				B46E8AE626B985B20069BB93 /* NewMovieTableViewController.swift in Sources */,
-				B46E8AEA26B98B850069BB93 /* NewDataManagerMovie.swift in Sources */,
-				B46E8AE226B9827A0069BB93 /* NewMovieTableViewCell.swift in Sources */,
 				B46E8ADC26B9066F0069BB93 /* DataManagerMovie.swift in Sources */,
-				B46E8AE026B950B70069BB93 /* DetailMovieViewController.swift in Sources */,
 				B46E8AD626B8F5C70069BB93 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
