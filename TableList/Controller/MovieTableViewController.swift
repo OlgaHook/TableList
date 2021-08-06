@@ -116,7 +116,7 @@ class MovieTableViewController: UITableViewController {
 
             
             
-            let movieVC = segue.destination as! MovieTableViewCell
+            let movieVC = segue.destination as! DetailMovieViewController
         // Pass the selected object to the new view controller.
             movieVC.movie = movies[indexPath.row]
     }

@@ -152,6 +152,7 @@
                                     <outlet property="filmPosterCell" destination="02b-dU-dgG" id="3dh-Yb-VXE"/>
                                     <outlet property="filmTitleCell" destination="LgT-qf-xKt" id="bNW-Ry-dYS"/>
                                     <outlet property="moviePoster" destination="02b-dU-dgG" id="VYW-Nl-vwI"/>
+                                    <segue destination="tyK-gs-tcm" kind="show" id="LSD-6m-hKA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -164,7 +165,55 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDE-dJ-zDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.60000000000002" y="824.43778110944538"/>
+            <point key="canvasLocation" x="758" y="825"/>
+        </scene>
+        <!--Detail Movie View Controller-->
+        <scene sceneID="Efx-jf-OJC">
+            <objects>
+                <viewController id="tyK-gs-tcm" customClass="DetailMovieViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hw-ia-O5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="8Wt-Bp-1BO">
+                                <rect key="frame" x="67.5" y="133.5" width="240" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nxn-LN-MVk">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="264"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="2dd-bH-HeP"/>
+                                            <constraint firstAttribute="height" constant="264" id="CuR-xS-6pf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZd-Gq-bdd">
+                                        <rect key="frame" x="0.0" y="297" width="240" height="103"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="f5H-dy-Avf"/>
+                                            <constraint firstAttribute="height" constant="103" id="lT9-dw-yzA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IRl-T3-VKJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Wt-Bp-1BO" firstAttribute="centerX" secondItem="4hw-ia-O5f" secondAttribute="centerX" id="QML-ao-bEP"/>
+                            <constraint firstItem="8Wt-Bp-1BO" firstAttribute="centerY" secondItem="4hw-ia-O5f" secondAttribute="centerY" id="Z0R-lq-J3D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qvS-qX-EUL"/>
+                    <connections>
+                        <outlet property="detailMovieLabel" destination="jZd-Gq-bdd" id="dpu-ev-oa7"/>
+                        <outlet property="detailMovieView" destination="Nxn-LN-MVk" id="xOQ-R9-NaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0US-ej-thy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="824.43778110944538"/>
         </scene>
         <!--Music-->
         <scene sceneID="I5C-3R-HNe">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4414AFB26BBFE7900A8DE68 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4414AFA26BBFE7900A8DE68 /* MovieTableViewController.swift */; };
+		B4414B2726BCD96A00A8DE68 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4414B2626BCD96A00A8DE68 /* DetailMovieViewController.swift */; };
 		B46E8AD226B8E8640069BB93 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD126B8E8640069BB93 /* MusicTableViewController.swift */; };
 		B46E8AD626B8F5C70069BB93 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD526B8F5C70069BB93 /* Song.swift */; };
 		B46E8AD826B8F8970069BB93 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E8AD726B8F8970069BB93 /* DataManager.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		B4414AFA26BBFE7900A8DE68 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		B4414B2626BCD96A00A8DE68 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		B46E8AD126B8E8640069BB93 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
 		B46E8AD526B8F5C70069BB93 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B46E8AD726B8F8970069BB93 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				B46E8AEB26B9A1CD0069BB93 /* MusicController */,
 				B46E8AEF26BAFCAD0069BB93 /* MovieTableViewCell.swift */,
 				B4414AFA26BBFE7900A8DE68 /* MovieTableViewController.swift */,
+				B4414B2626BCD96A00A8DE68 /* DetailMovieViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				B46E8AD226B8E8640069BB93 /* MusicTableViewController.swift in Sources */,
 				B46E8ADC26B9066F0069BB93 /* DataManagerMovie.swift in Sources */,
 				B46E8AD626B8F5C70069BB93 /* Song.swift in Sources */,
+				B4414B2726BCD96A00A8DE68 /* DetailMovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
