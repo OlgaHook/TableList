@@ -59,7 +59,7 @@
         <!--Detail Music View Controller-->
         <scene sceneID="w5U-hf-DgC">
             <objects>
-                <viewController id="3mY-ea-LBe" customClass="DetailMusicViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="3mY-ea-LBe" customClass="DetailMusicViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M1W-gM-6OP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +107,7 @@
         <!--Movie Table View Controller-->
         <scene sceneID="dRX-dA-Cn0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDE-dJ-zDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Qvo-6C-6xx" customClass="MovieTableViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8HW-a9-zKi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -149,9 +150,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="filmPosterCell" destination="02b-dU-dgG" id="3dh-Yb-VXE"/>
-                                    <outlet property="filmTitleCell" destination="LgT-qf-xKt" id="bNW-Ry-dYS"/>
-                                    <outlet property="moviePoster" destination="02b-dU-dgG" id="VYW-Nl-vwI"/>
+                                    <outlet property="filmPosterCell" destination="02b-dU-dgG" id="Wuo-vp-aQ3"/>
+                                    <outlet property="filmTitleCell" destination="LgT-qf-xKt" id="hLR-oh-Npl"/>
                                     <segue destination="tyK-gs-tcm" kind="show" id="LSD-6m-hKA"/>
                                 </connections>
                             </tableViewCell>
@@ -163,13 +163,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="l3P-3k-wz0"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SDE-dJ-zDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="758" y="825"/>
         </scene>
         <!--Detail Movie View Controller-->
         <scene sceneID="Efx-jf-OJC">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0US-ej-thy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="tyK-gs-tcm" customClass="DetailMovieViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hw-ia-O5f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -211,7 +211,6 @@
                         <outlet property="detailMovieView" destination="Nxn-LN-MVk" id="xOQ-R9-NaR"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0US-ej-thy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="824.43778110944538"/>
         </scene>
@@ -254,11 +253,12 @@
             </objects>
             <point key="canvasLocation" x="-1244" y="508"/>
         </scene>
-        <!--MovieNew-->
+        <!--Movie-->
         <scene sceneID="ZCr-bm-uDT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ib8-0X-V0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jfl-Dj-duE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="MovieNew" image="film.fill" catalog="system" id="t6o-g5-B9y"/>
+                    <tabBarItem key="tabBarItem" title="Movie" image="film" catalog="system" id="t6o-g5-B9y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M5v-Za-LSS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -270,13 +270,12 @@
                         <segue destination="Qvo-6C-6xx" kind="relationship" relationship="rootViewController" id="Dj5-ue-WE7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ib8-0X-V0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-44" y="826"/>
         </scene>
     </scenes>
     <resources>
-        <image name="film.fill" catalog="system" width="128" height="93"/>
+        <image name="film" catalog="system" width="128" height="93"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

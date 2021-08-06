@@ -15,7 +15,6 @@ class MovieTableViewCell: UITableViewCell {
     
     var movie : Movie!
     
-  
 }
 
  
