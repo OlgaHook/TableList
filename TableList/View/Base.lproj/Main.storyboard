@@ -107,7 +107,6 @@
         <!--Movie Table View Controller-->
         <scene sceneID="dRX-dA-Cn0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SDE-dJ-zDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Qvo-6C-6xx" customClass="MovieTableViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8HW-a9-zKi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -163,13 +162,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="l3P-3k-wz0"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDE-dJ-zDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="758" y="825"/>
         </scene>
         <!--Detail Movie View Controller-->
         <scene sceneID="Efx-jf-OJC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0US-ej-thy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="tyK-gs-tcm" customClass="DetailMovieViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hw-ia-O5f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -211,6 +210,7 @@
                         <outlet property="detailMovieView" destination="Nxn-LN-MVk" id="xOQ-R9-NaR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0US-ej-thy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="824.43778110944538"/>
         </scene>
@@ -256,7 +256,6 @@
         <!--Movie-->
         <scene sceneID="ZCr-bm-uDT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ib8-0X-V0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jfl-Dj-duE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Movie" image="film" catalog="system" id="t6o-g5-B9y"/>
                     <toolbarItems/>
@@ -270,6 +269,7 @@
                         <segue destination="Qvo-6C-6xx" kind="relationship" relationship="rootViewController" id="Dj5-ue-WE7"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ib8-0X-V0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-44" y="826"/>
         </scene>
